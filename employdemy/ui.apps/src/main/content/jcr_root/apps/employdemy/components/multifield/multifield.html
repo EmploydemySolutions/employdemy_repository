@@ -1,0 +1,8 @@
+<sly data-sly-use.model="com.employdemy.core.models.MultifieldDropDown" />
+<div class="dropdown">
+  ${model.title}
+  <sly data-sly-list.item="${model.multifields}">
+    <option value=${item.title}>${item.title}</option>
+    <option value=${item.description}>${item.description}</option>
+</sly>
+</div>
