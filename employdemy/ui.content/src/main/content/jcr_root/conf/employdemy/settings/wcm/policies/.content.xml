@@ -351,7 +351,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="WorldVision Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/text,/libs/foundation/components/title,group:WorldVision]">
+                        components="[/libs/cq/experience-fragments/editor/components/experiencefragment,/libs/wcm/foundation/components/responsivegrid,/libs/foundation/components/text,/libs/foundation/components/title,group:WorldVision,group:Employdemy - Content,group:Employdemy - Form,group:Employdemy - Structure]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_1456955416586100>
                 </responsivegrid>
