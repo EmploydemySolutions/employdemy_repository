@@ -1,0 +1,13 @@
+<sly data-sly-use.HeroCTA="com.employdemy.core.models.HeroCTAModel" />
+
+<div class="hero-image">
+    <img src="${HeroCTA.heroCTAImage}" alt="${HeroCTA.heroCTAImageAltText}">
+
+    <div class="hero-text">
+        ${HeroCTA.heroCTADescription @context='html'}
+    </div>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='employdemy.heroCTA'}"/>
+</sly>
