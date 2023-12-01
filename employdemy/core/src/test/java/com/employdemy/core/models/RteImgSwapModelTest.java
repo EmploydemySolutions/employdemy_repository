@@ -13,7 +13,7 @@ import io.wcm.testing.mock.aem.junit5.AemContextExtension;
 @ExtendWith({AemContextExtension.class,MockitoExtension.class})
 public class RteImgSwapModelTest {
     
-    RteImgSwapModel rteimg=new RteImgSwapModel();
+	RteImgSwapModel rteimg=new RteImgSwapModel();
     
     @BeforeEach
     void setup() throws IllegalAccessException {

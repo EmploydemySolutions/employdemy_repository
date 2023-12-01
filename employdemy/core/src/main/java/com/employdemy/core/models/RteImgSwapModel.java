@@ -1,6 +1,7 @@
 package com.employdemy.core.models;
 
 import org.apache.sling.api.SlingHttpServletRequest;
+
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
@@ -18,7 +19,7 @@ import lombok.Getter;
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, selector = ExporterConstants.SLING_MODEL_SELECTOR,  extensions = ExporterConstants.SLING_MODEL_EXTENSION)
 public class RteImgSwapModel implements ComponentExporter {
 
-    static final String RESOURCE_TYPE = "employdemy/components/worldvision/rteImgSwap";
+    public static final String RESOURCE_TYPE = "employdemy/components/worldvision/rteImgSwap";
     
     @ValueMapValue
     private String direction;
