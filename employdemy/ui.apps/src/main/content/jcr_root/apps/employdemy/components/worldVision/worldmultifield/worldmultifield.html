@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<div data-sly-use.model="com.employdemy.core.models.WorldMultiField">
+  <div data-sly-list.option="${model.options}">
+    <!-- Render each individual multifield item -->
+    <div class="multifield-item">
+      <h3>${option.name}</h3>
+      <p>Email: ${option.emailId}</p>
+      <p>Standard: ${option.standard}</p>
+      <p>SerialNo: ${option.serialNo}</p>    
+      <p>Image:<img src="${option.image}" alt="Student Image" width="100" height="100"></p>
+      <p>Document: ${option.document}</p>    
+    </div>
+  </div>
+</div>
+
