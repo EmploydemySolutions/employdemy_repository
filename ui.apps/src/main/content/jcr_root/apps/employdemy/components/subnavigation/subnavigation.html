@@ -1,0 +1,26 @@
+<!-- 
+Testing...
+
+
+
+<h1>MultiField</h1>
+<div data-sly-use.sub="com.employdemy.core.models.SubNavigationModel"></div>
+
+      <p> Label : <b>${sub.moreLabel} </b></p>
+
+        ========================== USING MAP ================================
+    <div data-sly-list.item="${sub.primaryLinks}">
+        ---------------Item : ${itemList.count}--------------
+        <p> Label : <b>${item.label} </b></p>
+        <p> URL : <b>${item.url}</b> </p>
+        <p> Page : <b>${item.page}</b> </p>
+
+
+<h1>NestedMultiField</h1>
+
+         <ul data-sly-list.country="${sub.content}">
+                <li>Pathurl: ${country.pathurl}</li>
+                      <li>Text: ${country.text}</li>
+                            <li>HyperLink: ${country.hyperlink}</li>
+            </ul>
+    </div> -->
