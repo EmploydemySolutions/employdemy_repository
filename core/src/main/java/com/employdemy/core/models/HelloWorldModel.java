@@ -15,7 +15,9 @@
  */
 package com.employdemy.core.models;
 
-import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_TYPE;
+import static org.apache.sling.api.resource.ResourceResolver.*;
+
+import java.util.Optional;
 
 import javax.annotation.PostConstruct;
 
@@ -31,8 +33,6 @@ import org.apache.sling.settings.SlingSettingsService;
 
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
-
-import java.util.Optional;
 
 @Model(adaptables = Resource.class)
 public class HelloWorldModel {
@@ -57,7 +57,7 @@ public class HelloWorldModel {
                 .map(pm -> pm.getContainingPage(currentResource))
                 .map(Page::getPath).orElse("");
 
-        message = "Hello World!\n"
+        message = "Hello Worldddd!\n"
             + "Resource type is: " + resourceType + "\n"
             + "Current page is:  " + currentPagePath + "\n"
             + "This is instance: " + settings.getSlingId() + "\n";
